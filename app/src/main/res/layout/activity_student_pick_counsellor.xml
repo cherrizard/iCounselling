@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.student.StudentPickCounsellorActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="12dp"
+        android:src="@drawable/page_pickyourcounsellor"
+        android:background="@color/powder"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/tanahkhim"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_tanahkhim"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_tanahkhim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Tan Ah Khim"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/leekokhan"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_leekokhan"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_leekokhan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Lee Kok Han"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/tehjunyi"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_tehjunyi"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_tehjunyi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Teh Jun Yi"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tangjoynn"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_tangjoynn"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_tangjoynn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Tang Joynn"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/chaipeiling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_chaipeiling"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_chaipeiling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Chai Pei Ling"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/engqianjun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="12.5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_engqianjun"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_engqianjun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Eng Qian Jun"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/wongkahyee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="12.5dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_wongkahyee"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_wongkahyee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Wong Kah Yee"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wongkhakyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12.5dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/darkGrey">
+
+                    <ImageView
+                        android:id="@+id/photo_wongkhakyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:src="@drawable/counsellor" />
+
+                    <TextView
+                        android:id="@+id/name_wongkhakyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/yellow"
+                        android:text="Wong Kha Kyt"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

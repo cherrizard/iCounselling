@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fyp.counsellingandwellness.icounselling.activities.SessionActvity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/powder">
+
+        <RelativeLayout
+            android:id="@+id/chatWith"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:src="@drawable/chattingwith"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/image"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:text="Student"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/clearChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:text="Clear History"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/isabelline"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro">
+    </View>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/container_session_message_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="fyp.counsellingandwellness.icounselling.activities.counsellor.CounsellorVoiceCallOutgoingActivity"
+android:background="@color/isabelline">
+
+    <TextView
+        android:id="@+id/loggedInName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_call"
+        android:layout_centerHorizontal="true"
+        android:text="Student Name"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Video Call"
+        android:id="@+id/button_call"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_call"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:text="Click to start video call"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15dp"/>
+</RelativeLayout>

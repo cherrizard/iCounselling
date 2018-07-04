@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/powder</item>
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/white</item>
+
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textColorPrimary">@color/darkGrey</item>
+        <item name="android:textColorSecondary">@color/gainsboro</item>
+
+        <item name="colorControlNormal">@color/gainsboro</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="colorControlHighlight">@color/gainsboro</item>
+        <item name="android:textColorHint">@color/gainsboro</item>
+        <item name="android:editTextColor">@color/darkGrey</item>
+
+        <item name="colorButtonNormal">@color/yellow</item>
+        <item name="android:colorButtonNormal">@color/yellow</item>
+    </style>
+
+    <style name="AppThemeYellow" parent="AppTheme">
+        <item name="android:statusBarColor">@color/yellow</item>
+    </style>
+
+    <style name="AppThemeIsabelline" parent="AppTheme">
+        <item name="android:statusBarColor">@color/isabelline</item>
+    </style>
+
+    <style name="AppThemeTurquoise" parent="AppTheme">
+        <item name="android:statusBarColor">@color/turquoise</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:textColorPrimary">@color/yellow</item>
+        <item name="android:background">@color/powder</item>
+        <item name="android:textColor">@color/darkGrey</item>
+    </style>
+</resources>

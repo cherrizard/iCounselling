@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.student.StudentAppointmentsPageMakeAnAppointmentActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/page_makeanappointment"
+        android:padding="12dp"
+        android:background="@color/powder"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gainsboro"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/isabelline"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/buttonDate"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Date:"
+                android:background="@color/turquoise"
+                android:textColor="@color/isabelline"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/showDate"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/darkGrey"
+                android:text="Click on Date: to choose"/>
+
+            <Button
+                android:id="@+id/buttonTime"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="6dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Time:"
+                android:background="@color/turquoise"
+                android:textColor="@color/isabelline"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/showTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/darkGrey"
+                android:text="Click on Time: to choose"/>
+
+            <RadioGroup
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Appointment type:"
+                    android:textColor="@color/black"/>
+                <RadioButton android:id="@+id/radioVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Voice Call"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/darkGrey"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radioVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video Call"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/darkGrey"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radioFace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Face-to-Face"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/darkGrey"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bookAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:text="Book Appointment"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/cancelAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:text="Cancel Appointment"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/isabelline"
+                android:layout_marginBottom="50dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

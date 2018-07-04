@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fyp.counsellingandwellness.icounselling">
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name=".SinchService"></service>
+
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FingerprintActivity"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppThemeYellow"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.student.StudentNavBarActivity" />
+        <activity
+            android:name=".activities.counsellor.CounsellorNavBarActivity" />
+        <activity
+            android:name=".activities.student.StudentPickCounsellorProfileActivity"
+            android:theme="@style/AppThemeYellow" />
+        <activity
+            android:name=".activities.SessionActvity" />
+        <activity
+            android:name=".activities.student.StudentMorePageMyProfile"
+            android:theme="@style/AppThemeYellow" />
+        <activity
+            android:name=".activities.counsellor.CounsellorMorePageMyProfile"
+            android:theme="@style/AppThemeYellow" />
+        <activity
+            android:name=".activities.student.StudentMorePageMyProfileEditProfile"
+            android:theme="@style/AppThemeIsabelline" />
+        <activity
+            android:name=".activities.counsellor.CounsellorMorePageMyProfileEditProfile"
+            android:theme="@style/AppThemeIsabelline" />
+        <activity
+            android:name=".activities.student.StudentMorePageMyCounsellor"
+            android:theme="@style/AppThemeYellow" />
+        <activity
+            android:name=".activities.student.StudentPickCounsellorActivity" />
+        <activity
+            android:name=".activities.SessionViewStudentProfileActivity"
+            android:theme="@style/AppThemeYellow" />
+        <activity
+            android:name=".activities.student.StudentAppointmentsPageMakeAnAppointmentActivity" />
+        <activity
+            android:name=".activities.counsellor.CounsellorAppointmentsPageAppointmentActivity"
+            android:theme="@style/AppThemeTurquoise" />
+        <activity
+            android:name=".activities.counsellor.CounsellorVoiceCallOutgoingActivity"
+            android:theme="@style/AppThemeIsabelline"/>
+        <activity
+            android:name=".activities.SessionVideoCallScreenActivity"
+            android:theme="@style/FullScreenTheme"/>
+        <activity
+            android:name=".activities.student.StudentVideoCallIncomingActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true"/>
+        <activity
+            android:name=".activities.counsellor.CounsellorVideoCallOutgoingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeIsabelline"/>
+        <activity
+            android:name=".activities.student.StudentVoiceCallIncomingActivity"
+            android:theme="@style/AppThemeIsabelline" />
+    </application>
+</manifest>

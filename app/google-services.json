@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "818644240725",
+    "firebase_url": "https://icounselling-fyp.firebaseio.com",
+    "project_id": "icounselling-fyp",
+    "storage_bucket": "icounselling-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818644240725:android:24fa6e26f511b62e",
+        "android_client_info": {
+          "package_name": "fyp.counsellingandwellness.icounselling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818644240725-dt9vhrb2mepbndvvsdq414ldsdin9t81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fyp.counsellingandwellness.icounselling",
+            "certificate_hash": "2e45a5d2b17c31c409e646423473258415e746b5"
+          }
+        },
+        {
+          "client_id": "818644240725-6jf8j235hqg7rr2m0c4fng04kgfmku69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fyp.counsellingandwellness.icounselling",
+            "certificate_hash": "f7c07c72c885a6f79a393b7757c3ca88a903d9a5"
+          }
+        },
+        {
+          "client_id": "818644240725-5tqfousc8a3vncuqc6lk4kunbbr9e6jf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fyp.counsellingandwellness.icounselling",
+            "certificate_hash": "98cb13b90db94132701855539eac83ad4a65cc6b"
+          }
+        },
+        {
+          "client_id": "818644240725-5fu57597q4qfq82r1nkr6p3qri0elb34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2RCa5MwSku9KcyOcV7G2z-HbPnwlzHDc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818644240725-5fu57597q4qfq82r1nkr6p3qri0elb34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

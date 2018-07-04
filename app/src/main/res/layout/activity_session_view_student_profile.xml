@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.SessionViewStudentProfileActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="top|right">
+
+                <ImageButton
+                    android:id="@+id/voiceCall"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icon_phone"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/isabelline"/>
+
+                <ImageButton
+                    android:id="@+id/videoCall"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icon_video"
+                    android:scaleType="centerCrop"
+                    android:layout_toEndOf="@+id/voiceCall"
+                    android:layout_marginStart="5dp"
+                    android:tint="@color/isabelline"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/student"
+                android:background="@color/transparent"/>
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="22dp"
+                android:textSize="28dp"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:text="Course"
+            android:textSize="12dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_gravity="center"
+            android:background="@color/powder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:text="Gender"
+            android:textSize="12dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_gravity="center"
+            android:background="@color/powder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:text="Age"
+            android:textSize="12dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_gravity="center"
+            android:background="@color/powder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:text="Contact Number"
+            android:textSize="12dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_gravity="center"
+            android:background="@color/powder"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="2dp"
+            android:text="Address"
+            android:textSize="12dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:background="@color/powder"/>
+    </LinearLayout>
+</ScrollView>

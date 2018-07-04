@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_students"
+        android:icon="@drawable/icon_student"
+        android:title="Students" />
+
+    <item
+        android:id="@+id/navigation_appointments"
+        android:icon="@drawable/icon_calendar"
+        android:title="Appointments" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/icon_more"
+        android:title="More" />
+
+</menu>
